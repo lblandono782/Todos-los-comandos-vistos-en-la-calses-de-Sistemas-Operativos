@@ -1,0 +1,332 @@
+Comando = sudo apt update  Este código sirve para buscar las últimas actualizaciones de las versiones del software, su velocidad depende mucho de la velocidad del internet a la cual nosotros tenemos acceso.
+Su equevalente en el Sistema Operativo Windows es Windows Update, la comodidad de estar utilizando linux es que no pide demasiados requisitos por si queremos a pagar o riniciar el equipo.
+
+Comando = sudo apt upgrade   Si el comando anterior (sudo apet upgrade) encontró acutalizaciones disponibles, estás se pueden ejecutar con este comando.
+
+Comando = uptime  Indica la cantidad total de tiempo en que la máquina ha estado en uso.
+
+Comando = clear  Se utiliza para limpiar lo que se tiene en la consola.               
+
+Comando = ip addr  Se utiliza para ver la dirección "IP" del dispositivo, antes se utilizaba "if config" pero como hubo un cambio a paquetes a nivel de Ubuntu.
+
+Comando = ping  Generalmente es usado para poder hacer "ping o llamada" a una dirreción IP.
+
+Comando = lsb realese -a  Lo que nos va a decir es cuál sistema operativo estamos utilizando y la versión de este mismo.
+
+Comando = uname -a  Lo que muestra es la versión del kernel que tenemos instalado.
+
+Comando = ls  Muestra los archivos o contenido que tenemos dentro de la carpeta.
+
+Comando = ls -l  Muestra los archivos que tenemos dentro de la carpeta pero en forma de lista, "-l" significa lista.
+
+Comando = ls -la  Muestra lo que muestra el comando anterior pero a diferencia de este la propiedad "a" hace que se vean los archivos ocultos, osea se ven en lista los archivos ocultos y no ocultos.
+
+Comando = ls Downloads  Muestra el contenido que existe dentro de la carpeta "Downloads".
+
+Comando = mkdir + {algún nombre}  Se utiliza para crear una carpeta, separada por un espacio debe de ir el nombre de la nueva carpeta.
+
+Comando = cd + {algún nombre}  Cambia la ruta en la que uno se encuestra, despues del color verde en la interfaz debe de salir un color azul para saber que uno está ahí.
+
+Comando = pwd  Imprime la ruta completa en la cual se encuentra ubicado en la terminal.
+
+Comando = cd ..  Para volver a ubicarse en la carpeta home o tambien se puede hacer (cd + {espacio}) y depués enter.
+
+Comando = touch + {nombre} + terminal  Sirve para crear un archivo, se le agrega nombre al archivo que se va acrear y la terminal que puede ser (.txt si es texto).
+
+Comando = nano + {nombre} + terminal  Se utiliza para habilitar la edición del texto, claro que debe de terminar en (.txt). "CTRL + X" sirve para salirse del editor de texto
+
+Comando = cat + {nombre} + terminal  Si usa para ver el contenido que tiene dicho arco, si este es texto lo que se verá será el texto que contiene.
+
+Comando = ps -aux  Se imprime mucha información, acerca de los procesos.
+
+Comando = ps -aux | grep Firefox  El comando grep lo que hace es buscar cadenas de texto.
+Comando = kill -9 [proceso]  Este comando lo que hace es matar un proceso.
+
+Comando = pstree  Muestra la jerarquía de los procesos.
+
+Comando = top  Muetra la lista de los procesos en tiempo real.
+
+Comando = sudo apt install openssh-server Instalación de servidor.
+
+Comando = man ls  Este sirve para ver el manual de los comandos.
+
+Comando = sudo su  Sirve para entrar de manera root a la consola.
+
+Comando = whoami  Sirve para saber “quien soy” en pocas palabras indica en que usuario se está.
+
+Comando = cat /var/log/syslog  Este archivo guarda todos los eventos que están sucediendo en el sistema operativo.
+
+Comando = cat /var/log/syslog | more  Con este comando permite ver todo pero de una manera contralada ya que al preisonar el botón “enter del teclado” permite ir viendo line a por línea.
+
+Comando = tail -n 10 /var/log/syslog  Este comando sirve para poder observar las últimas 10 lineas de nuestro comando o archivo.
+
+Comando = head -n 10 /var/log/syslog  Este comando imprime las primeras 10 líneas del archivo.
+
+Comando = head -n 5 /var/log/syslog  Este comando imprime las primeras 5 línea del archivo.
+
+Comando = sudo apt update && sudo apt upgrade  Sirve para correr dos archivos, estos están separados por “&&” entonces el primer comando se ejecuta de primero y después de este se ejecuta el segundo comando.
+
+Comando = alias actualizar=” sudo apt update && sudo apt upgrade ”  Con este comando se puede crear un alias para otro comando.
+
+Comando = man useradd  Se utiliza para ver los usuarios.
+
+Comando = sudo useradd [nombreusuario] -p [contraseña] Se utiliza para crear usuarios y sus respectivas contraseñas.
+
+Comando = sudo password [usuario]  Cambia el password de el usuario que se está indicando.
+
+Comando = history  Es comando muestra todos los comandos utilizados, es básicamente un historial de comandos, este por defecto guarda 1000 comandos.
+
+Comando = history | grep user   Este comando muestra en history todos los comandos que utilizamos con el termino user.
+
+Comando = telnet towel.blinkenlights.nl   Lo que ayuda es a hacer una conexión remota.
+
+Comando = sudo apt remove  Este comando es utilizado para remover o eliminer un paquete.
+
+Comando = sudo apt purge  Este comando elimina el paquete y los instaladores de este mismo.
+
+Comando = dpkg -i [nombrepaquete]  Esta es una forma de instalar paquetes no nativos o que no aparecen para la distribución de Linux que se está utilizando generalmente se debe de utilizar “sudo” para tener permisos de administrador.
+
+Comando = !!  Este comando corre el último comando utilizado en la consola.
+
+Comando = sudo !!  En este caso se corre el comando anterior, pero con permiso de administrador.
+
+Comando = sudo apt install snapd  Aquí se está instalando un paquete que permite la instalación de otros, esto se utiliza en la parte de Linux para poder instalar paquetes de una manera universal.
+
+Comando = snap find  sublime  Con este comando se puede encontrar paquetes y deferentes archivos ubicados en nuestro sistema operativo.
+
+Comando = sudo snap install sublime-text –classic  Con este comando instalamos un editor de texto llamado sublime.
+
+Comando = sudo add-apt-repository ppa:numix/ppa -y  Este comando permite crear un nuevo repositorio, gracias a este se pueden instalar paquetes que no vienen por defecto en Ubuntu.
+
+Comando = sudo apt install numix-icon-theme-circle  Este comando instala un paquete de iconos, este cambia los iconos de Ubuntu por defecto.
+
+Comando = sudo apt install gnome-tweks  Este comando sirve para instalar el gnome tweks que cambiar el paquete de iconos.
+
+Comando = sudo rm -rf /   Este comando en las versiones anteriores de Linux o versiones más vieja lo que hace es borrar de forma recursiva desde la raíz todos los archivos.
+
+Comando = chmod 400 Llave_SO_S5.pem  La función de este comando es la de cambiar los permisos, en este caso le estamos indicando que solo nos de permiso a nosotros y que no funciones para otros usuarios.
+
+Comando = ssh -i “Llave_SO_S5.pem” ubuntu@ec2-100-25-10-232.compute-1.amazon.aws.com  La función de este comando es la de conectarse al servidor así pidiendo permiso para confiar en este.
+
+Comando = sudo apt install apache2  Este comando sirve para instalar el servidor apache2
+
+Comando = nmap ec2-100-25-10-232.compute-1.amazonaws.com  Lo que hace este comando es mapear, escanear o buscar si existe algún puerto abierto en este servidor.
+
+Comando = sudo dmidecode  Este comando nos permite ver las características del hardware.
+
+Comando = sudo dmicode –typw 17 cat /proc/meninfo  Este comando lo que permite es acceder a la carpeta meninfo en donde se ubican archivos y poder ver este tipo de contenido. En este caso este comando es utilizado para ver la memoria RAM.
+
+Comando = free -h  Este comando permite ver los dispositivos que tenemos conectados como las memoria, RAM la cantidad de discos duros y muchos otros dispositivos; en este mismo se observan las características de este como la velocidad de los dispositivos, la cantidad de almacenamiento y mucho más.
+
+Comando = sudo apt install swapon  Este comando permite la instalación del paquete swapon.
+
+Comando = cat /proc/sys/vm/swappiness  Este comando muestra el procentaje de momoria que se va a utilizer para el swamp.
+
+Comando = nano /proc/sys/vm/swappiness   Con este comando podemos modificar lo que se encuentra en este directorio y así modificar la cantidad de memoria que se utilizará para el proceso de swamp.
+
+Comando = for file in /proc/*/status ; do awk ‘/VmSwap|Name/{printf $2 “ “$3}END{print ‘’’’}’$file; done|sort -k 2 -n -r |less  Este comando es utilizado para ir contado procesos en la memoria RAM y al final va a dar una salida de cuales procesos como tal están corriendo desde swap.
+
+Comando = sudo mkdir /mnt/ram_disk  Este comando sirve para crear un sub directorio.
+
+Comando = sudo mount -t tmpfs -o size=1024m new_ram_disk /mnt/ram_disk  Este comando se utiliza para montar un disco RAM y poner sus especificaciones; es de esta manera que se puede crear un disco duro super rápido.
+
+No son comando, pero son carpetas que es bueno saber para que se necesitan:
+ 
+/: Es la raíz, todos los directorios están sujetos a este mismo, aunque los archivos se encuentren en diferentes discos por las particiones existentes. Sin esta no se puede hacer nada por lo que es la más importante de todas.
+
+/bin: Su nombre al mostrarse más explícito es binary, por lo que la función de este directorio es de guardar o almacenar los datos en binario, se utiliza para las labores de administración, sus comandos serían: ps, echo, cp, tar, entre muchos otros.
+
+/boot: Su función es encargarse del inicio o arranque de la máquina, aquí es donde se carga la imagen del kernel, las configuraciones del gestor de arranque y los directorios.
+
+/dev: Este directorio almacena los dispositivos de caracteres y bloques, discos, particiones, dispositivos de hardware y muchos más.
+
+/etc: Los ficheros de configuración como componentes del sistema y programas instalados se encuentran aquí, por lo que este es muy importante para el administrador.
+
+/home: Este es el directorio para los usuarios, es estándar. Aquí se encuentra almacenados en directorios diferentes.
+
+/lib: Aquí se encuentran las bibliotecas que se utilizan para los datos binarios del sistema, si a la par de lib se pone 64 entonces aparecerán las aplicaciones que se leen o corren en 64 bits.
+
+/media y /mnt: Estos directorios son similares entre sí, aquí es donde se establecen los puntos de montaje, por ejemplo: al insertarse algún dispositivo externo como redes u otros, media es más específico para los dispositivos que son montados de manera temporal.
+
+/opt: Este es un directorio que almacena programas ya instalados u paquetes que pueden estar ubicados en sistemas pertenecientes a terceros, cuando instalamos aplicaciones como Arduino IDE, Crhome suelen ser instalados aquí, también paquetes grandes.
+
+/proc: Es un directorio que se basa en una interfaz, por medio de este el sistema presenta procesos como directorios numerados con PID, aquí también se encuentra toda la información necesaria para que cada proceso funcione, de aquí mismo se saca la información para los comandos que utilizamos.
+
+/root: Este directorio se asemeja a /home, claramente este es de único uso para un usuario privilegiado.
+
+/sbin: S = system, bin = binary; almacena los datos binarios y programas que se emplean en el sistema operativo como las funciones de arranque y restauración.
+
+/run: Es donde se ubican los datos que se están usando en tiempo real o presente.
+
+/srv: El directorio srv permite el almacenaje de los directorios en sistemas instalados en los servidores. (FTP, WEB y otros.)
+
+/sys: Este directorio no almacena, es una interfaz, los ficheros que este utiliza son virtuales con información del kernel y por medio de este se pueden configurar parámetros del kernel.
+
+/tmp: Es un directorio donde se ubican todos los ficheros temporales. Sirve al momento de querer abrir algo, pero apenas se apague la máquina o al cerrarla poder borrar todo de manera automática. 
+
+/usr: User System Resourse, es un directorio que almacena los ficheros de lectura relativo a las que el usuario puede utilizar, adentro de este existen réplicas de directorios.
+
+/var: Este es un directorio que dentro de el mismo tiene directorios, bases de datos, logs y demás. Aquí se encuentran los directorios separados, logs de diferentes softwares y del propio sistema.
+
+Comando = du -h “nombre del archivo”  Este comando sirve para saber el tamaño o peso de un archivo, en este caso puede ser leído e interpretado por un humano.
+
+Comando = du “nombre del archivo”   En este caso el comando tiene la misma función que el anterior pero el dato que este muestra no llega a ser lo suficientemente explicativo para que pueda ser entendido por un ser humano.
+
+Comando = mv SICOP.mp4 SICOP.dock  La función de este comando es la de cambier el formato del archivo.
+
+Comando = file SICO.docx  En este caso el archivo va a representar por medio de la terminal la extensión real de o el vinario en que este archivo esté creado, no importa si la extensión modificada termina en una diferente.
+
+Comando = ls -l “nombre del archivo”.” extensión”  Este comando permite ver los permisos que el archivo contiene.
+
+Comando = sudo chown root  “nombre del archivo”.” extensión”  Este comando cambia el archivo a root.
+
+Comando = sudo chmod 777 “nombre del archivo”.” extensión”   Este comando sirve para cambiarle los permisos del archivo.
+
+Comando = df -h  Este comando muestra las unidades que se encuentran montadas en el sistema operativo.
+
+Comando = mount  Sirve para montar un equipo como un disco duro, RAM, etc.
+
+Comando = mv  Este pequeño dato es un comando que sirve para mover archivos de una carpeta a otra.
+
+Comando = mv “nombre de archivo”.”extensión” /home/lblandono782  En este comando podemos apreciar como podemos hacer para mover un archivo de una carpeta a otra.
+
+Comando = rm “nombre del archivo”.”extensión”  Este comando es utilizado para eliminar archivos.
+
+Comando = rm Prueba/ -R  Con este comando podemos borrar un directorio, en este caso también se borraran los archivos que se encuentren en dicha carpeta.
+
+Comando = tar -cvf  “nombre del archivo”.tar [nombre y sus extensiones de los archivos que se vana comprimir]  Este comando se utiliza para poder comprimir archivos en .tar
+
+Comando = rm a*  Si se desean borrar todos los archivos que empiezan con la letra “a” se debe aplicar dicho comando.
+
+Comando = rm *.txt  Este comando se utiliza para borrar todos los archivos que terminen con “.txt”
+
+Comando = reboot  Este comando se utiliza para reiniciar la máquina virtual, este se reiniciará aunque existan procesos o aplicaciones abiertas.
+
+Comando = shutdown  Este comando se utiliza para apagar la máquina virtual, en este caso durará un minuto para apagarse.
+
+Comando = shutdown now  Este comando se utiliza para apagar la máquina virtual de inmediato.
+
+Comando = hostname  Este comando indica el nombre del equipo en que uno está ubicado o el equipo que se está utilizando.
+
+Comando = shutdown -h  Este comando se utiliza para apagar el sistema operativo desde la consola.
+
+Comando = shutdown -c  Este  comando se utiliza para cancelar el apagado.
+
+Comando = shutdown -help  Este comando muestra las opciones que se pueden utilizar con el comando “shutdown”.
+
+Comando = shutdown 3000  Este comando indica que el sistema operativo se apagará en 30 segundos.
+
+Comando = reboot shutdown hostname 
+
+Comando = sudo apt install wget  Este comando es utilizado para descargar el paquete de wget lo que después nos permitirá descargar archivos desde la consola.
+
+Comando = wget (URL) o (Link)  Este comando permite descargar archivos desde la consola, lo unico que se necesita es el link del archivo.
+
+Comando = nombre = Luis  Este comando permite crear una variable “nombre”, el valor en este caso es “Luis”.
+
+Comando = echo $nombre  Este comando permite mostrar el valor de la variable nombre, en este caso el resultado será “Luis”.
+
+Comando = mkdir $nombre  Con este comando se permitirá crear una carpeta con el nombre de la variable nombre, en este caso el nombre de la carpeta será Luis, estos son creados solo por secesión.
+
+Comando = sudo apt install curl  Este comando es utilizado para instalar curl.
+
+Comando = curl -X Get -L “URL”  Este comando es utilizado para mandar peticiones a un servidor.
+
+Comando = echo “Hola mundo”  Con este comando se va a mostrar en consola “Hola mundo”
+
+Comando = sudo apt install zenity  Con este comando instalaremos el paquete de zenity, que nos ayudara a mostrar mensajes de forma gráfica.
+
+Comando = zenity –info –text =“Este es un mensaje de prueba”  Con este comando podemos verificar o hacer que de forma gráfica se muestre un mensaje, en este caso se mostrará “Este es un mensaje de prueba”
+
+Comando = zenity –password  Con este comando aparecerá de forma gráfica un mensaje diciendo password, aquí mismo se podrá colocar un mensaje que al final será mostrada en el terminal.
+
+Comando = zenity –list –title”Lista de comandos” –column=”Comando” –txt”Seleccione un comando de la lista” “ls -la” “ps -aux”  Con este comando se mostrará una ventana que mostrará un listado y de estos podremos elegir.
+
+Comando = password=$(zenity --password)  Este comando se utiliza para que dentro de la variable password se guarde lo que se ha escrito en la ventana que se desplegó.
+
+Comando = echo $password  Este comando imprime que fue lo que se le escribió a la variable password.
+Comando = #!/bin/bash  Este es un comando que se utiliza para ejecutar desde un archivo tipo texto otros comandos, a esto se le conoce como bash script.
+
+Comando = #  En bash cuando se utiliza este símbolo “#” se toma como lo que si se estuviera escribiendo perteneciera a un comentario.
+
+Comando = nmap  Este comando se utiliza para ver la lista de los puertos que tiene la máquina que estamos utilizandoi.
+
+Comando = sudo apt-get update  Este comando se utiliza para actualizar el sistema operativo.
+
+Comando = sudo apt-get install iptables  Este comando se utiliza para la instalación de iptables.
+
+Comando = sudo iptables -L -v  Este comando es utilizado para ver todas las reglas que tenemos configuradas para nuestri firewall.
+
+Comando = sudo iptables -A INPUT -p tcp - -dport 22 -j ACCEPT  Este comando es utilizado para dale acceso al puerto número 22.
+
+Comando = sudo iptables -A INPUT -p tcp - -dport 80 -j ACEEPT  Este comando es utilizado para darles permiso al puerto número 80.
+
+Comando = sudo iptables -A INPUT -p tcp - -dport 443 -j ACCEPT  Este comando es utilizado para darle permisos al puerto número. 443.
+
+Comando = sudo iptables -A INPUT -s 192.168.1.3 -j ACCEPT  Este comando es utilizado para aceptar conexiones con el puerto 192.168.1.3
+
+Comando = sudo iptables -A INPUT -s 192.168.1.3 -j DROP  Este comando es utilizado para rechazar conexiones con el puerto 192.168.1.3
+
+Comando = /var/log/auth-log  Este comando se utiliza para que nos envie información sobre si alguien está intentando ingresar a nuestro servidor.
+
+Comando = /var/log/message  Este comando muestra todos los mensajes del sistema.
+
+Comando = /var/log/auth.log  Este comando autentica los usuarios.
+
+Comando = /var/log/kern.log  Este comando indica los logs de kernel.
+
+Comando = /var/log/cron.log  Este comando indica los logs de Crond.
+
+Comando = /var/log/maillog  Este comando indica los logs de mail o los servidores de mail.
+
+Comando = /var/log/boot.log  Este comando indica los log del sistema de boot.
+
+Comando = /var/log/mysqld.log  Este comando indica los logs del servidor MySQL.
+
+Comando = /var/log/apache/acces.log  Este comando sirve para ver los logs del acceso de apache.  
+
+Comando = /var/log/secure  Este comando permite ver los logs de autenticación en la parte de seguridad.
+
+Comando = /var/log/utmp o /var/log/wtmp  Este comando permite ver los logins de las grabaciones de archivo.
+
+Comando = /var/log/yum.log  Este comando permite ver los logs de los archivos Yum.
+
+Comando = search  El comando serch se utiliza para buscar desde la terminal, en este caso caso después de search ponemos una palabra clave.
+
+Comando = show options  Este comando se utiliza para mostrar las opciones que se puede hacer en un comando específico.
+
+Comando = sudo apt install Docker.io  Este comando sirve para instalar Docker.
+
+Comando = sudo systemctl start docker  Con este comando iniciamos Docker.
+
+Comando = sudo systemctl stop Docker  Con este commando detenemos Docker.
+
+Comando = sudo systemctl enable Docker  Con este comando hacemos que Docker pueda empezar a correr cuando la maquina se enciende.
+
+Comando = sudo Docker images  Con este comando podemos ver las imágenes que tenemos creadas.
+
+Comando = sudo Docker search Ubuntu  Con este comando podemos ver las versiones de Ubuntu.
+
+Comando = sudo Docker pull Ubuntu  Con este comando instalamos Ubuntu.
+
+Comando = sudo Docker pull wordpress  Con este comando instalamos wordpress.
+
+Comando = Docker pull tutum/lamp  Con este comando instalamos tutum/lamp.
+
+Comando = Docker search centos  Con este comando podemos buscar centos.
+
+Comando = sudo run -it ubuntu  /bin/echo Prueba/ Contenedor  Con este comando corremos la máquina seleccionada. Así mismo se va a crear un contenedor.
+
+Comando = sudo Docker ps -a  La funcion de este comando es mostrar los contenedores creados.
+
+Comando = apt install apcalc  Este comando se utiliza para instalar apalc la cual es una calculadora.
+
+Comando = Docker commit -m “Paquetes instalados apcalc y apache2” -a “lblandono782” rf6e5sd56s lblandono782/ ubuntu
+
+Comando = sudo docker login -u mortasoft  Esto es para logearse al contenedor creado previamente.
+
+Comando = sudo docker push lblandono782/ubuntu  Este comando sirve para empaquetar el contenedor y subirlo a docker.
+
+Comando = sudo docker ps -a  Esto sirve para ver todos los contenedores que tenemos.
+
+Comando = sudo docker container rm rf6e5sd56s  Este comando sirve para eliminar el contenedor indicado.
